@@ -6,5 +6,6 @@ variable "c" {
 }
 
 output "c" {
-  value = "Name - ${var.c["name"]}"
+ # value = "Name - ${var.c["name"]}"
+  value = "Name - ${var.c.name}"
 }
