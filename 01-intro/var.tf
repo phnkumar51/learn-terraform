@@ -2,10 +2,7 @@ variable "x" {
   default = 10
 }
 
-# List of variables
-variable "y" {
-  default = [ 1, "abc", 0.5, True]
-}
+
 
 
 # output variable - To access variable - var.x ( for normal variables)
@@ -21,6 +18,4 @@ output "x1" {
   value = "value of x - ${var.x}"
 }
 
-output "y" {
-  value = var.y[0]
-}
+
