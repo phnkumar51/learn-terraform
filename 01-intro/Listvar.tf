@@ -1,7 +1,7 @@
 # List of variables
+
 variable "y" {
-  type = list(any)
-  default = [ 1, "abc", 0.5, True]
+  default = [1,"abc",0.5,True]
 }
 
 output "y" {
