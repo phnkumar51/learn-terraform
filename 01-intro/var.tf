@@ -14,4 +14,11 @@ output "x1" {
   value = "value of x - ${var.x}"
 }
 
-#updated
+# List of variables
+ variable "y" {
+   default = [1, "abc", 0.5, True]
+ }
+
+output "y" {
+  value = var.y[1]
+}
