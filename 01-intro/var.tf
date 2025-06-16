@@ -16,9 +16,9 @@ output "x1" {
 
 # List of variables
  variable "y" {
-   default = [1, "abc", 0.5, True]
+   default = [ 1, "abc", 0.5, True]
  }
 
 output "y" {
-  value = var.y[1]
+  value = var.y[0]
 }
