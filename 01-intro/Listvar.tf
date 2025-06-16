@@ -8,6 +8,7 @@ output "y" {
   value = var.y[0]
 }
 
+#
 
 # variable "y" {
 #  type    = list(any)
