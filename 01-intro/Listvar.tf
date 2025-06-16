@@ -1,11 +1,11 @@
 # List of variables
 
-variable "y" {
-  default = [1,"abc",0.5,True]
+variable "z" {
+  default = [1, "abc", 0.5, true]
 }
 
-output "y" {
-  value = var.y[0]
+output "z" {
+  value = var.z[0]
 }
 
 #
