@@ -13,3 +13,5 @@ output "x" {
 output "x1" {
   value = "value of x - ${var.x}"
 }
+
+#updated
