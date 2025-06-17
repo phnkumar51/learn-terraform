@@ -1,5 +1,10 @@
-resource "null_resource" "dummy"{
+resource "null_resource" "dummy"
+{
   count = length(var.x)
+
+  provisioner "local_exec"{
+    command = "echo ${var.x[count.index]}"
+  }
 }
 
 variable "x" {
