@@ -1,3 +1,11 @@
 resource "null_resource" "dummy"{
-  count=10
+  count=length(var.x)
+}
+
+variable "x"{
+  default = [
+  2,
+  200,
+  2000,
+  20000]
 }
